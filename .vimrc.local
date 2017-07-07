@@ -1,0 +1,73 @@
+
+"set cursorline
+"set relativenumber
+
+"" source my .vimrc / .vimrc.local
+nnoremap <leader>sov :so $MYVIMRC <CR>
+
+map <leader>c <Esc>:
+
+"" custom normal mode maping
+nnoremap <leader>w :w <CR>
+nnoremap <leader>q :bp<CR>:bd #<CR>
+nnoremap <leader>qq :q <CR>
+
+"" custom visual mode maping
+
+"" custom visual mode maping
+
+"" ************************************************************************
+"  vim-go/fatih shortcuts and custom maps
+"" ************************************************************************
+" K (shortcut for :GoDoc) -> show function declaration and definiton (cursor must be on function)
+" gd -> :GoDef go to definition for a function
+" :GoDecls -> need ctrlp plugin now use fzf
+" :GoInfo  -> show aarguments and return type for a function
+" :GoRename new name for function (will rename in all included packages)
+" :GoDescribe
+
+" ]] -> next function
+" [[ -> prev function
+
+" if -> inside fucntion
+" af -> autside function (all function include comments)
+
+" vif -> select all inner function
+" dif -> delete all inside function
+" yif -> yank all inside function
+"
+" Snipets
+" errp -> tab
+" errn, -> tab return nil
+" fn -> tab fmt.Println()
+" ff -> tab fmt.Printf()
+
+" :GoErrCheck -> check if you check if you checked for errors returned all
+" :GoMetaLinter
+" functions
+
+"" move throw build, test, etc errors -- NEED to find a good shortcut
+"nnoremap jn :cnext<CR>
+"nnoremap kn :cprev<CR>
+
+nnoremap <leader>gor :GoRun<CR>
+nnoremap <leader>gob :GoBuild<CR>
+
+"" testing
+
+"" <leader>t -> run tests
+
+"" it will test only function inside cursor
+nnoremap <leader>gotf :GoTestFunc<CR>
+
+"" jost compile the file_test.go
+nnoremap <leader>gotc :GoTestCompile<CR>
+
+"" go coverage
+nnoremap <leader>goc :GoCoverage<CR>
+
+"" go coverage toogle
+nnoremap <leader>goct :GoCoverageToggle<CR>
+
+"" go alternate file and test file
+nnoremap <leader>goa :GoAlternate<CR>
