@@ -103,10 +103,6 @@ Plug 'jelera/vim-javascript-syntax'
 "" PHP Bundle
 Plug 'arnaud-lb/vim-php-namespace'
 
-
-"*****************************************************************************
-"*****************************************************************************
-
 "" Include user's extra bundle
 if filereadable(expand("~/.vimrc.local.bundles"))
   source ~/.vimrc.local.bundles
@@ -116,7 +112,6 @@ call plug#end()
 
 " Required:
 filetype plugin indent on
-
 
 "*****************************************************************************
 "" Basic Setup
@@ -200,7 +195,7 @@ else
   let g:indentLine_char = '┆'
   let g:indentLine_faster = 1
 
-  
+
   if $COLORTERM == 'gnome-terminal'
     set term=gnome-256color
   else
@@ -208,7 +203,7 @@ else
       set term=xterm-256color
     endif
   endif
-  
+
 endif
 
 
