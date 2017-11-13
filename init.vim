@@ -350,6 +350,9 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tagbar#enabled = 1
 let g:airline_skip_empty_sections = 1
 
+" vim-airline-themes
+let g:airline_theme='wombat'
+
 " vim-airline
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
