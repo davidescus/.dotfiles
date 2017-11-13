@@ -208,6 +208,9 @@ endfunction
 nnoremap <Leader>x :bnext<CR>
 nnoremap <Leader>z :bprev<CR>
 
+" delete current buffer
+nnoremap <Leader>q :b#|bd#
+
 " Down is really the next line
 nnoremap j gj
 nnoremap k gk
@@ -244,8 +247,8 @@ vnoremap K :m '<-2<CR>gv=gv
 nnoremap <Leader><space> :noh<CR>
 
 " Handle syntastic error window
-nnoremap <Leader>e :lopen<CR>
-nnoremap <Leader>q :lclose<CR>
+" nnoremap <Leader>e :lopen<CR>
+" nnoremap <Leader>q :lclose<CR>
 
 " Find current file in NERDTree
 nnoremap <Leader>nff :NERDTreeFind<CR>
