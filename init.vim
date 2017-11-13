@@ -209,7 +209,7 @@ nnoremap <Leader>x :bnext<CR>
 nnoremap <Leader>z :bprev<CR>
 
 " delete current buffer
-nnoremap <Leader>q :b#|bd#
+nnoremap <Leader>q :b#|bd#<CR>
 
 " Down is really the next line
 nnoremap j gj
