@@ -290,7 +290,7 @@ nnoremap <Leader>r :ALEFix<CR>
 " }}}
 " ================ Plugins Mapping ======================== {{{
 
-"" Git
+" Git
 noremap <Leader>ga :Gwrite<CR>
 noremap <Leader>gc :Gcommit<CR>
 " noremap <Leader>gsh :Gpush<CR>
@@ -299,6 +299,12 @@ noremap <Leader>gs :Gstatus<CR>
 noremap <Leader>gb :Gblame<CR>
 noremap <Leader>gd :Gvdiff<CR>
 noremap <Leader>gr :Gremove<CR>
+
+" vim-go
+autocmd FileType go nmap <leader>r  <Plug>(go-run)
+autocmd FileType go nmap <leader>b  <Plug>(go-build)
+autocmd FileType go nmap <leader>t  <Plug>(go-test)
+autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
 
 " }}}
 " ================ Plugins setups ======================== {{{
@@ -388,6 +394,8 @@ else
   let g:airline_symbols.readonly = ''
   let g:airline_symbols.linenr = ''
 endif
+
+let g:go_fmt_command = "goimports"                                " import on save file
 " }}}
 " vim:foldenable:foldmethod=marker
 
