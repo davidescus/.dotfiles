@@ -31,6 +31,8 @@ Plug 'sebdah/vim-delve'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+Plug 'rking/ag.vim'
+
 call plug#end()
 "}}}
 " ================ General Config ==================== {{{
@@ -305,6 +307,9 @@ autocmd FileType go nmap <leader>r  <Plug>(go-run)
 autocmd FileType go nmap <leader>b  <Plug>(go-build)
 autocmd FileType go nmap <leader>t  <Plug>(go-test)
 autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
+
+" Ag
+let g:ag_highlight=1
 
 " }}}
 " ================ Plugins setups ======================== {{{
