@@ -308,9 +308,6 @@ autocmd FileType go nmap <leader>b  <Plug>(go-build)
 autocmd FileType go nmap <leader>t  <Plug>(go-test)
 autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
 
-" Ag
-let g:ag_highlight=1
-
 " }}}
 " ================ Plugins setups ======================== {{{
 
@@ -397,7 +394,21 @@ else
   let g:airline_symbols.linenr = ''
 endif
 
+" Ag
+let g:ag_highlight=1
+
+" vim-go
 let g:go_fmt_command = "goimports"                                " import on save file
+" let g:go_metalinter_autosave = 1
+" let g:go_metalinter_autosave_enabled = ['vet', 'golint']
+" let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+
+" Build/Test on save.
+augroup auto_go
+	autocmd!
+	autocmd BufWritePost *.go :GoTest
+	autocmd BufWritePost *_test.go :GoTest
+augroup end
 " }}}
 " vim:foldenable:foldmethod=marker
 

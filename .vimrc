@@ -47,6 +47,12 @@ Plug 'scrooloose/syntastic'
 Plug 'Yggdroot/indentLine'
 Plug 'avelino/vim-bootstrap-updater'
 Plug 'sheerun/vim-polyglot'
+
+
+Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
+
+
+
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 else
@@ -59,12 +65,14 @@ if exists('make')
 endif
 Plug 'Shougo/vimproc.vim', {'do': g:make}
 
+
 "" Vim-Session
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
 
 if v:version >= 703
   Plug 'Shougo/vimshell.vim'
+  Plug 'sebdah/vim-delve'
 endif
 
 if v:version >= 704
