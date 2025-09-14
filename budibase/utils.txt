@@ -1,7 +1,0 @@
-https://budibase.com/
-https://github.com/Budibase/budibase?tab=readme-ov-file
-https://docs.budibase.com/docs/docker-compose
-
-# how to build a custom crm in minutes
-https://www.youtube.com/watch?v=PtUU6bk5xkI&t=399s
-
