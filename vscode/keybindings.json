@@ -1,0 +1,51 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "alt+1",
+    "command": "workbench.action.focusSideBar",
+    "when": "!sideBarFocus"
+  },
+  {
+    "key": "alt+1",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "sideBarFocus"
+  },
+  {
+    "key": "alt+2",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "alt+3",
+    "command": "workbench.action.focusAuxiliaryBar",
+    "when": "!auxiliaryBarFocus"
+  },
+  {
+    "key": "alt+3",
+    "command": "workbench.action.toggleAuxiliaryBar",
+    "when": "auxiliaryBarFocus"
+  },
+  {
+    "key": "alt+4",
+    "command": "workbench.action.terminal.focus",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "alt+4",
+    "command": "workbench.action.togglePanel",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+5",
+    "command": "macros.toggleActivityBarWithFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  }
+]
