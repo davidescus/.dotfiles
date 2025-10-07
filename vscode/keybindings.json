@@ -44,8 +44,49 @@
     "when": "explorerViewletVisible && filesExplorerFocus"
   },
   {
-    "key": "ctrl+shift+n",
-    "command": "explorer.newFolder",
-    "when": "explorerViewletVisible && filesExplorerFocus"
+    "key": "ctrl+f4",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "workbench.action.nextEditorInGroup",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+h",
+    "command": "workbench.action.previousEditorInGroup",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "editor.action.smartSelect.expand",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "editor.action.smartSelect.shrink",
+    "when": "editorTextFocus"
+  },
+  // {
+  //   "key": "ctrl+q",
+  //   "command": "editor.action.showHover",
+  //   "when": "editorTextFocus"
+  // },
+  {
+    "key": "F3",
+    "command": "toggle",
+    "when": "editorTextFocus",
+    "args": {
+      "id": "showHover",
+      "value": [
+        {
+          "editor.action.showHover": true
+        },
+        {
+          "editor.action.showHover": false
+        }
+      ]
+    }
   }
 ]
