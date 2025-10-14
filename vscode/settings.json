@@ -54,13 +54,5 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "golang.go"
   },
-  "go.formatTool": "gofmt",
-  "pgsql.serverGroups": [
-    {
-      "name": "Servers",
-      "id": "3EAEEC02-B9B4-4F21-932B-F6E3A8E4EF75",
-      "isDefault": true
-    }
-  ],
+  "go.formatTool": "gofmt"
 }
-
