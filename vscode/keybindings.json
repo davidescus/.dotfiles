@@ -1,5 +1,5 @@
-// Place your key bindings in this file to override the defaults
 [
+  // panels
   {
     "key": "alt+1",
     "command": "workbench.action.focusSideBar",
@@ -39,16 +39,6 @@
     "command": "macros.toggleActivityBarWithFocus"
   },
   {
-    "key": "ctrl+n",
-    "command": "explorer.newFile",
-    "when": "explorerViewletVisible && filesExplorerFocus"
-  },
-  {
-    "key": "ctrl+f4",
-    "command": "workbench.action.closeActiveEditor",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+shift+l",
     "command": "workbench.action.nextEditorInGroup",
     "when": "editorTextFocus"
@@ -58,6 +48,7 @@
     "command": "workbench.action.previousEditorInGroup",
     "when": "editorTextFocus"
   },
+  // selections
   {
     "key": "ctrl+w",
     "command": "editor.action.smartSelect.expand",
@@ -68,25 +59,107 @@
     "command": "editor.action.smartSelect.shrink",
     "when": "editorTextFocus"
   },
-  // {
-  //   "key": "ctrl+q",
-  //   "command": "editor.action.showHover",
-  //   "when": "editorTextFocus"
-  // },
+  // coding
   {
-    "key": "F3",
-    "command": "toggle",
-    "when": "editorTextFocus",
-    "args": {
-      "id": "showHover",
-      "value": [
-        {
-          "editor.action.showHover": true
-        },
-        {
-          "editor.action.showHover": false
-        }
-      ]
-    }
+    "key": "ctrl+q",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+c a", // code actions
+    "command": "editor.action.codeAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+c r", // rename
+    "command": "editor.action.rename",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+g d", // go to definition
+    "command": "editor.action.revealDefinition",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+g r", // go to references
+    "command": "editor.action.goToReferences",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+left", // go back to previous location
+    "command": "workbench.action.navigateBack",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+right", // go forward to next location
+    "command": "workbench.action.navigateForward",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+f", // find in files
+    "command": "workbench.action.findInFiles",
+    "when": "editorTextFocus || !inputFocus"
+  },
+  {
+    "key": "ctrl+f4",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "editorTextFocus || !inputFocus"
+  },
+  // explorer
+  {
+    "key": "ctrl+r", // explorer rename file
+    "command": "renameFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "ctrl+c", // explorer copy file
+    "command": "filesExplorer.copy",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "ctrl+x", // explorer cut file
+    "command": "filesExplorer.cut",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "ctrl+v", // explorer paste file
+    "command": "filesExplorer.paste",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "ctrl+d", // explorer delete file
+    "command": "deleteFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "ctrl+a", // explorer create file
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "ctrl+shift+a", // explorer create folder
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "capslock",
+    "command": "workbench.action.closeQuickOpen",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "capslock",
+    "command": "closeFindWidget",
+    "when": "editorFocus && findWidgetVisible"
+  },
+  {
+    "key": "capslock",
+    "command": "closeReferenceSearch",
+    "when": "referenceSearchVisible"
+  },
+  {
+    "key": "capslock",
+    "command": "cancelSelection",
+    "when": "editorHasSelection && !inQuickOpen && !findWidgetVisible"
   }
 ]
+

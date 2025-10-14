@@ -9,17 +9,58 @@
   "editor.tabSize": 2,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "breadcrumbs.enabled": false,
   "github.copilot.nextEditSuggestions.enabled": true,
   "workbench.startupEditor": "none",
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.renderIndentGuides": false,
   "editor.occurrencesHighlight": "off",
   "editor.selectionHighlight": false,
   "editor.minimap.enabled": false,
   "editor.hover.enabled": false,
+  "editor.matchBrackets": "never",
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmPasteNative": false,
+  "git.confirmSync": false,
+  "window.zoomLevel": 0,
+  "editor.codeLens": false,
+  "editor.links": false,
+  "editor.lightbulb.enabled": "off",
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  // "editor.lineNumbers": "relative",
+  "editor.suggestOnTriggerCharacters": false, // automatic sugggestions - ctrl+space
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  "editor.wordBasedSuggestions": "off",
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.renderLineHighlight": "none",
+  "files.autoSave": "afterDelay",
+  "extensions.ignoreRecommendations": true,
+
   "macros": {
     "toggleActivityBarWithFocus": [
       "workbench.action.focusActivityBar",
       "workbench.action.toggleActivityBarVisibility"
     ]
-  }
+  },
+
+  // my custom settings !!! do not push to git, copy to .dotgiles !!!
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "golang.go"
+  },
+  "go.formatTool": "gofmt",
+  "pgsql.serverGroups": [
+    {
+      "name": "Servers",
+      "id": "3EAEEC02-B9B4-4F21-932B-F6E3A8E4EF75",
+      "isDefault": true
+    }
+  ],
 }
+
