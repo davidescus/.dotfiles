@@ -81,8 +81,14 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "alt+g r", // go to references
-    "command": "editor.action.goToReferences",
+    "key": "ctrl+g d", // peek definition
+    "command": "editor.action.peekDefinition",
+    "when": "editorTextFocus"
+  },
+
+  {
+    "key": "ctrl+g r", // peek references
+    "command": "editor.action.referenceSearch.trigger",
     "when": "editorTextFocus"
   },
   {
@@ -160,6 +166,10 @@
     "key": "capslock",
     "command": "cancelSelection",
     "when": "editorHasSelection && !inQuickOpen && !findWidgetVisible"
+  },
+  // extensions
+  {
+    "key": "ctrl+b p",
+    "command": "projectManager.listProjects"
   }
 ]
-

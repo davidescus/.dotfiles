@@ -1,7 +1,7 @@
 {
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "One Dark Pro Flat",
-  "editor.fontFamily": "'Source Code Pro', monospace",
+  "editor.fontFamily": "'Source Code Pro'",
   "editor.fontSize": 16,
   "editor.lineHeight": 24,
   "editor.guides.indentation": false,
@@ -23,6 +23,9 @@
   "explorer.confirmDelete": false,
   "explorer.confirmPasteNative": false,
   "git.confirmSync": false,
+  "scm.diffDecorations": "all",
+  "scm.diffDecorationsGutterVisibility": "always",
+  "diffEditor.ignoreTrimWhitespace": false,
   "window.zoomLevel": 0,
   "editor.codeLens": false,
   "editor.links": false,
@@ -36,11 +39,14 @@
     "comments": false,
     "strings": false
   },
+  "zenMode.centerLayout": false, // in zen mode remove left/right spaces between editor and pannels
   "editor.wordBasedSuggestions": "off",
   "editor.acceptSuggestionOnEnter": "off",
   "editor.renderLineHighlight": "none",
   "files.autoSave": "afterDelay",
+  "breadcrumbs.enabled": false,
   "extensions.ignoreRecommendations": true,
+  // "editor.lineNumbers": "off", // disable line numbers
 
   "macros": {
     "toggleActivityBarWithFocus": [
@@ -49,7 +55,7 @@
     ]
   },
 
-  // my custom settings !!! do not push to git, copy to .dotgiles !!!
+  // go
   "[go]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "golang.go"
