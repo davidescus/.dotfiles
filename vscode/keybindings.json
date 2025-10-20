@@ -48,6 +48,7 @@
     "command": "workbench.action.previousEditorInGroup",
     "when": "editorTextFocus"
   },
+
   // selections
   {
     "key": "ctrl+w",
@@ -59,6 +60,7 @@
     "command": "editor.action.smartSelect.shrink",
     "when": "editorTextFocus"
   },
+
   // coding
   {
     "key": "ctrl+q",
@@ -111,6 +113,7 @@
     "command": "workbench.action.closeActiveEditor",
     "when": "editorTextFocus || !inputFocus"
   },
+
   // explorer
   {
     "key": "ctrl+r", // explorer rename file
@@ -167,6 +170,54 @@
     "command": "cancelSelection",
     "when": "editorHasSelection && !inQuickOpen && !findWidgetVisible"
   },
+
+  // debugging
+  {
+    "key": "shift+f10", // run without debugging
+    "command": "workbench.action.debug.run",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+f9", // run with debugging
+    "command": "workbench.action.debug.start",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+f2", // stop debugging / running
+    "command": "workbench.action.debug.stop",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "f9", // continue debugging
+    "command": "workbench.action.debug.continue",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "f8", // step over
+    "command": "workbench.action.debug.stepOver",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "f7", // step into
+    "command": "workbench.action.debug.stepInto",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "shift+f8", // step out
+    "command": "workbench.action.debug.stepOut",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "alt+f8", // evaluate
+    "command": "workbench.action.debug.evaluate",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "ctrl+f8", // toggle breakpoint
+    "command": "editor.debug.action.toggleBreakpoint",
+    "when": "editorTextFocus"
+  },
+
   // extensions
   {
     "key": "ctrl+b p",
