@@ -67,4 +67,4 @@ other
 
 extensions
 
-- **ctrl+b p** - open project manager
+- **ctrl+b p** - list projects (project manager)
