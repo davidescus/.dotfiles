@@ -9,7 +9,9 @@
   "editor.tabSize": 2,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "editor.stickyScroll.enabled": false,
   "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
   "workbench.startupEditor": "none",
   "workbench.tree.enableStickyScroll": false,
   "workbench.tree.renderIndentGuides": false,
@@ -32,6 +34,7 @@
   "editor.lightbulb.enabled": "off",
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
+  "editor.wordWrap": "on",
   // "editor.lineNumbers": "relative",
   "editor.suggestOnTriggerCharacters": false, // automatic sugggestions - ctrl+space
   "editor.quickSuggestions": {
@@ -60,5 +63,45 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "golang.go"
   },
-  "go.formatTool": "gofmt"
+  "go.formatTool": "gofmt",
+
+  // my custom settings !!! do not push to git, copy to .dotgiles !!!
+  "pgsql.serverGroups": [
+    {
+      "name": "Servers",
+      "id": "3EAEEC02-B9B4-4F21-932B-F6E3A8E4EF75",
+      "isDefault": true
+    }
+  ],
+  "pgsql.connections": [
+    {
+      "id": "B014C0B5-AEA3-40E0-BC98-B61B1F315BBA",
+      "groupId": "3EAEEC02-B9B4-4F21-932B-F6E3A8E4EF75",
+      "authenticationType": "SqlLogin",
+      "connectTimeout": 15,
+      "applicationName": "vscode-pgsql",
+      "clientEncoding": "utf8",
+      "sslmode": "prefer",
+      "savePassword": true,
+      "server": "localhost",
+      "user": "admin",
+      "password": "",
+      "database": "admin",
+      "profileName": "[Local] psql-adsevolution-clients - ConnexionName",
+      "sshPassword": "",
+      "expiresOn": 0,
+      "emptyPasswordInput": false,
+      "port": "50000"
+    }
+  ],
+  "hediet.vscode-drawio.resizeImages": null,
+  "hediet.vscode-drawio.codeLinkActivated": false,
+  "chat.tools.terminal.autoApprove": {
+    "go": true,
+    "./collector": true,
+    "market\\": true,
+    "snapshot\"": true
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }

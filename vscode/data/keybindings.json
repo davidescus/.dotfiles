@@ -26,13 +26,7 @@
   },
   {
     "key": "alt+4",
-    "command": "workbench.action.terminal.focus",
-    "when": "!terminalFocus"
-  },
-  {
-    "key": "alt+4",
-    "command": "workbench.action.togglePanel",
-    "when": "terminalFocus"
+    "command": "workbench.action.togglePanel"
   },
   {
     "key": "alt+5",
@@ -170,22 +164,50 @@
     "command": "cancelSelection",
     "when": "editorHasSelection && !inQuickOpen && !findWidgetVisible"
   },
+  {
+    "key": "capslock",
+    "command": "editor.action.inlineSuggest.hide",
+    "when": "inlineSuggestionVisible"
+  },
+  {
+    "key": "capslock",
+    "command": "hideSuggestWidget",
+    "when": "suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+c", // if no selection, copy current line
+    "command": "editor.action.clipboardCopyAction",
+    "when": "editorTextFocus && !editorHasSelection"
+  },
 
   // debugging
   {
+    "key": "shift+f10",
+    "command": "-editor.action.showContextMenu",
+    "when": "textInputFocus"
+  },
+  {
     "key": "shift+f10", // run without debugging
-    "command": "workbench.action.debug.run",
-    "when": "editorTextFocus"
+    "command": "workbench.action.debug.run"
+  },
+  {
+    "key": "shift+f9",
+    "command": "-settings.action.showContextMenu",
+    "when": "inSettingsEditor"
   },
   {
     "key": "shift+f9", // run with debugging
-    "command": "workbench.action.debug.start",
-    "when": "editorTextFocus"
+    "command": "workbench.action.debug.start"
+    // "when": "editorTextFocus"
   },
   {
     "key": "ctrl+f2", // stop debugging / running
-    "command": "workbench.action.debug.stop",
-    "when": "inDebugMode"
+    "command": "workbench.action.debug.stop"
   },
   {
     "key": "f9", // continue debugging
